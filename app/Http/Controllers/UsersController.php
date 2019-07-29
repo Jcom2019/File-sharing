@@ -19,4 +19,8 @@ class UsersController extends Controller
         return view('Users.admin')->with('data',$data);
 
     }
+
+    public function Upload(){
+
+    }
 }

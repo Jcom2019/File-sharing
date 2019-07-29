@@ -11,6 +11,7 @@ Route::post('/Account','RegistrationController@Login');
 Route::get('/Home','RegistrationController@Login');
 Auth::routes();
 Route::get('/Account', 'AccountController@index');
-Route::get('/admin','UsersController@Registered_Users')
+Route::get('/admin','UsersController@Registered_Users');
+Route::get('/upload','UsersController@Upload');
 //Route::get('/login', 'RegisterController');
 ?>

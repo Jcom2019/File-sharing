@@ -35,9 +35,7 @@
                     <!-- Left Side Of Navbar -->
                     <div class="col-4" style="color:cornsilk">
                     <ul class="navbar-nav mr-auto">
-                        <li><a href="/" style="padding:10px; color:cornsilk">Home</a></li>
-                        <li><a href="about" style="padding:10px; color:cornsilk">About</a></li>
-                        <li><a href="Service" style="padding:10px; color:cornsilk ">Service</a></li>
+                        <li><a href="about" style="padding:10px; color:cornsilk">Received Files</a></li>
                     </ul>
                     </div>
 
