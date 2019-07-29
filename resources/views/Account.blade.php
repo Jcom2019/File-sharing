@@ -14,7 +14,7 @@
                     @endif
 
                     You are logged in!<br>
-                    <form action = '#'>
+                    <form action = '{!!action('UsersController@Upload')!!}'>
                         <button class="btn btn-primary">SEND FILES</button>
                     </form>
                 </div>

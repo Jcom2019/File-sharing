@@ -21,6 +21,7 @@ class UsersController extends Controller
     }
 
     public function Upload(){
+        return view('Users.upload');
 
     }
 }
