@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>File Sharing</title>
+    <title>File||Sharing</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
