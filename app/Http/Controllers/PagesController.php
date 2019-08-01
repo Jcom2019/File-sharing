@@ -17,7 +17,7 @@ class PagesController extends Controller
     public function Service(){
         return view('pages.Service');
     }
-    public function Register(){
-        return view('pages.Register');
+    public function Upload(){
+        return view('Users.Upload');
     }
 }

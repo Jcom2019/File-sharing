@@ -13,12 +13,19 @@
                             </div>
                         @endif
                             <div class="form-group">
-                                <form>
-                                    <input type="file" name="file"><br><br>
+                                <form action="{!!action('UsersController@UploadFile')!!}" method="POST" enctype="multipart/form-data" files="true">
+                                    @csrf
+                                    <input type="file" name="filetosend"><br><br>
                                     <label>Send to:  </label>
-                                    <input type="text" placeholder="enter username of the recipient"><br>
-                                    <button class="btn bg-primary" style="color:white">send</button>
+                                    <input type="text" placeholder="enter username of the recipient" name="user"><br>
+                                    <button class="btn bg-primary" style="color:white">send</button><br>
 
+
+
+                                </form>
+
+                                <form>
+                                    <input type="hidden" name="_method" value="PUT">
                                 </form>
                             </div>
                     </div>

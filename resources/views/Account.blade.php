@@ -14,8 +14,12 @@
                     @endif
 
                     You are logged in!<br>
-                    <form action = '{!!action('UsersController@Upload')!!}'>
+                    <form action = "{!!action('PagesController@Upload')!!}" method="POST">
+                        @csrf
                         <button class="btn btn-primary">SEND FILES</button>
+                    </form>
+                    <form>
+                        <input type="hidden" name="_method" value="PUT">
                     </form>
                 </div>
             </div>
