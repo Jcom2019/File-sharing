@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Files;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\Auth;
 
 class UsersController extends Controller
 {
@@ -24,7 +25,7 @@ class UsersController extends Controller
 
     public function UploadFile(Request $request){
 
-        $data="No file to send";
+        $note = "";
 
         if($request->hasFile('filetosend')){
 
@@ -38,16 +39,28 @@ class UsersController extends Controller
 
                 $file = new files;
 
+                if($request->input('user')==""){
+                    $note="***Please provide the recipient";
+                    return view('Users.upload')->with('note',$note);
+                }else{
                 $file->User = $request->input('user');
                 $file->file_name = $filetosave;
                 $file->save();
                 return redirect('Account');
+                }
         }else{
-
-            return redirect('Users.upload');
+            $note="***Please select a file";
+            return view('Users.upload')->with('note',$note);
         }
+    }
 
+    public function viewReceivedFiles(){
+            $file = files::all();
+            return view('Users.files',compact('downloads'))->with('file',$file);
+    }
 
-
+    public function Download(){
+            $file = new files;
+            return Storage::download($file->file_name);
     }
 }

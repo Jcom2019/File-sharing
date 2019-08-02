@@ -34,9 +34,6 @@
                     <div class="col-4" id="nav"></div>
                     <!-- Left Side Of Navbar -->
                     <div class="col-4" style="color:cornsilk">
-                    <ul class="navbar-nav mr-auto">
-                        <li><a href="about" style="padding:10px; color:cornsilk">Received Files</a></li>
-                    </ul>
                     </div>
 
                     <!-- Right Side Of Navbar -->

@@ -19,16 +19,15 @@
                                     <label>Send to:  </label>
                                     <input type="text" placeholder="enter username of the recipient" name="user"><br>
                                     <button class="btn bg-primary" style="color:white">send</button><br>
-
-
-
                                 </form>
-
                                 <form>
                                     <input type="hidden" name="_method" value="PUT">
                                 </form>
+                                <div>
+                                    <p style="color:red"><b>{{$note}}</b></p>
+                                </div>
                             </div>
-                    </div>
+                   </div>
                 </div>
             </div>
             <div class="col-md-4">

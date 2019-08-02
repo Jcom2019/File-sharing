@@ -18,6 +18,7 @@ class PagesController extends Controller
         return view('pages.Service');
     }
     public function Upload(){
-        return view('Users.Upload');
+        $note="";
+        return view('Users.Upload')->with('note',$note);
     }
 }
