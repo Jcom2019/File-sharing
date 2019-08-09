@@ -18,7 +18,7 @@
                         @csrf
                         <button class="btn btn-primary">SEND FILES</button>
                     </form>
-                    <form action = "{!!action('UsersController@viewReceivedFiles',$user=Auth::user()->name)!!}" method="POST">
+                    <form action = "{!!action('UsersController@viewReceivedFiles')!!}" method="POST">
                             @csrf
                             <br><button class="btn btn-primary">VIEW RECEIVED FILES</button>
                     </form>

@@ -45,6 +45,7 @@ class UsersController extends Controller
                 }else{
                 $file->User = $request->input('user');
                 $file->file_name = $filetosave;
+                $file->path= $path;
                 $file->save();
                 return redirect('Account');
                 }
@@ -59,8 +60,12 @@ class UsersController extends Controller
             return view('Users.files',compact('downloads'))->with('file',$file);
     }
 
-    public function Download(){
-            $file = new files;
-            return Storage::download($file->file_name);
+    public function Download($filename){
+            $file =files::find($filename);
+
+            $downpath ="/storage/files/$file->file_name";
+
+            return Storage::download($downpath, $file->file_name);
+
     }
 }

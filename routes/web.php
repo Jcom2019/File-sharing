@@ -11,6 +11,5 @@ Route::get('/admin','UsersController@Registered_Users');
 Route::post('/Account','UsersController@UploadFile');
 Route::post('/upload','PagesController@Upload');
 Route::post('/files','UsersController@viewReceivedFiles');
-Route::post('/files','UsersController@Download');
-//Route::get('/login', 'RegisterController');
+Route::get('/upload', 'UsersController@Download');
 ?>
