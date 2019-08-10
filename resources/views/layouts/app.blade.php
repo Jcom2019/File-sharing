@@ -18,12 +18,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-inverse" style="background-color:black">
             <div class="container row">
-                <div class="navbar-brand col-md-4" style="color:cornsilk">
+                <div class="navbar-brand col-md-4">
                    <img src="/storage/png/file_transfer.png"> {{ _('File Sharing') }}
                 </div>
                 {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}"> --}}
@@ -34,9 +35,9 @@
                     <!--  center Of Navbar -->
                     <div style="color:cornsilk">
                     <ul class="navbar-nav mr-auto">
-                        <li><a href="/" style="padding:10px; color:cornsilk">Home</a></li>
-                        <li><a href="about" style="padding:10px; color:cornsilk">About</a></li>
-                        <li><a href="Service" style="padding:10px; color:cornsilk ">Service</a></li>
+                        <li><div id="home-btn"><a href="/">Home</a></div></li>
+                        <li><div id="about-btn"><a href="about">About</a></div></li>
+                        <li><div id="service-btn"><a href="Service" >Service</a></div></li>
                     </ul>
                     </div>
                 </div>
