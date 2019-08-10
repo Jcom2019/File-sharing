@@ -4,7 +4,7 @@
     <div class="row justify-content-left">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header"><b>User Dashboard</b></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -12,15 +12,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!<br>
                     <form action = "{!!action('PagesController@Upload')!!}" method="POST">
                         @csrf
-                        <button class="btn btn-primary">SEND FILES</button>
+                        <button class="btn btn-primary" style="width:70%">SEND FILES</button>
                     </form>
                     <form action = "{!!action('UsersController@viewReceivedFiles')!!}" method="POST">
                             @csrf
-                            <br><button class="btn btn-primary">VIEW RECEIVED FILES</button>
+                            <br><button class="btn btn-primary" style="width:70%">VIEW RECEIVED FILES</button>
                     </form>
                     <form>
                         <input type="hidden" name="_method" value="PUT">

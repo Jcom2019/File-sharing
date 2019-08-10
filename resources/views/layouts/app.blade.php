@@ -22,28 +22,36 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-inverse" style="background-color:black">
-            <div class="container">
-                <div class="navbar-brand" style="color:cornsilk">
-                    {{ _('File Sharing') }}
+            <div class="container row">
+                <div class="navbar-brand col-md-4" style="color:cornsilk">
+                   <img src="/storage/png/file_transfer.png"> {{ _('File Sharing') }}
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}"> --}}
+                    {{-- <span class="navbar-toggler-icon"></span> --}}
+                {{-- </button> --}}
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent row">
-                    <div class="col-4" id="nav"></div>
-                    <!-- Left Side Of Navbar -->
-                    <div class="col-4" style="color:cornsilk">
+                <div class="col-md-4">
+                    <!--  center Of Navbar -->
+                    <div style="color:cornsilk">
                     <ul class="navbar-nav mr-auto">
                         <li><a href="/" style="padding:10px; color:cornsilk">Home</a></li>
                         <li><a href="about" style="padding:10px; color:cornsilk">About</a></li>
                         <li><a href="Service" style="padding:10px; color:cornsilk ">Service</a></li>
                     </ul>
                     </div>
+                </div>
+                {{-- right side of the navbar --}}
 
-                    <!-- Right Side Of Navbar -->
+                {{-- <div class="col-md-4"> --}}
+                    {{-- <ul class="navbar-nav"> --}}
+                        {{-- <li><a href="{{ route('login') }}" style="padding:10px; color:cornsilk">login</a></li> --}}
+                        {{-- <li><a href="{{ route('register')}}" style="padding:10px; color:cornsilk">Register</a></li> --}}
+                    {{-- </ul> --}}
+                {{-- </div> --}}
+                <div class="col-md-4">
+                    {{-- <!-- Right Side Of Navbar --> --}}
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
+                        {{-- <!-- Authentication Links --> --}}
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -55,8 +63,8 @@
                             @endif
                             @else
                                 <script>
-                                    document.getElementById('nav').innerHTML="";
-                                </script>
+                                     document.getElementById('nav').innerHTML="";
+                                 </script>
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -65,7 +73,7 @@
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
+                                                 document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                         </a>
 
