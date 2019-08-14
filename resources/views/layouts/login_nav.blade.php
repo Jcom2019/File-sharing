@@ -22,9 +22,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-inverse" style="background-color:black">
+        <nav class="navbar navbar-expand-md navbar-inverse">
             <div class="container">
-                <div class="navbar-brand" style="color:cornsilk">
+                <div class="navbar-brand">
                     {{ _('File Sharing') }}
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

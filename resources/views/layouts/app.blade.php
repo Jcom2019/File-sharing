@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-inverse" style="background-color:black">
+        <nav class="navbar navbar-expand-md navbar-inverse">
             <div class="container row">
                 <div class="navbar-brand col-md-4">
                    <img src="/storage/png/file_transfer.png"> {{ _('File Sharing') }}

@@ -14,7 +14,7 @@
                                     {!!$files->file_name!!}
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/storage/files/{{$files->file_name}}" download="{{$files->file_name}}"><img src="/storage/png/data-transfer-download-2x.png"></a><br>
+                                    <a href="/storage/files/{{$files->file_name}}" download="{{$files->file_name}}">download</a><br>
                                 </div>
                             </div>
                             <hr>

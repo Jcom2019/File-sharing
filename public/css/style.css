@@ -1,17 +1,17 @@
 body{
-    background-color: peru;
+    background-color:white;
 }
 .jumbotron{
-    border-bottom: solid black 10px;
     border-radius: 0;
-    color: peru;
+    color:black;
+    background-color: white;
 }
 .navbar{
-    border-bottom:solid peru 5px;
+    background-color: blue;
 }
 
 a{
-    color: peru;
+    color: white;
     font-weight: bold;
     text-decoration:none;
 }
@@ -22,20 +22,21 @@ a{
 }
 a:hover{
 
-    color: lightgray;
+    color: darkblue;
     text-decoration: none;
 
 }
 
 .navbar-brand{
 
-    color: peru;
+    color:white;
+    color:light
 }
 
 .btn{
 
-    background-color: peru;
-    color: lightgray;
+    background-color:blue;
+    color: white;
     padding:2% 5%
 }
 
@@ -51,8 +52,8 @@ li{
 
 input{
 
-    border:solid 5px peru;
+    border:solid 2px blue;
 }
 #email,#password,#password-confirm,#name{
-    border:solid 2px peru;
+    border:solid 2px blue;
 }
