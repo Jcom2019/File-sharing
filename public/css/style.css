@@ -65,3 +65,27 @@ footer{
     text-align: center;
     color: white;
 }
+#received-files-header{
+
+    border:solid 1px black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 2%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+#received-files-body{
+    border:solid 1px black;
+    padding: 2%;
+}
+#received-files{
+
+    padding: 2%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+}

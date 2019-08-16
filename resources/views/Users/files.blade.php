@@ -2,14 +2,14 @@
 
 @section('contents')
 <div class="row">
-    <div class="card col-md-6">
-        <div class="card-header"><b>Received files<b></div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-8">
+    <div class="col-md-6">
+        <div id="received-files-header"><b>RECEIVED  FILES<b></div>
+        <div id="received-files-body">
+            {{-- <div class="row"> --}}
+                {{-- <div class="col-md-8"> --}}
                     @foreach($file as $files)
                         @if($files->User==Auth::user()->name)
-                            <div class="row" style="background-color:darkgray; color:white">
+                            <div class="row" id="received-files">
                                 <div class="col-md-8">
                                     {!!$files->file_name!!}
                                 </div>
@@ -20,8 +20,8 @@
                             <hr>
                         @endif
                     @endforeach
-                </div>
-            </div>
+                {{-- </div> --}}
+            {{-- </div> --}}
         </div>
     </div>
 </div>
