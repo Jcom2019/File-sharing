@@ -82,5 +82,6 @@
             </div>
         </main>
     </div>
+    <footer>copyright&copy Jcom Tech 2019</footer>
 </body>
 </html>

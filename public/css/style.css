@@ -1,5 +1,7 @@
 body{
     background-color:white;
+    font-family: georgia;
+    text-align:justify;
 }
 .jumbotron{
     border-radius: 0;
@@ -56,4 +58,10 @@ input{
 }
 #email,#password,#password-confirm,#name{
     border:solid 2px blue;
+}
+footer{
+    background-color: blue;
+    padding: 1%;
+    text-align: center;
+    color: white;
 }
