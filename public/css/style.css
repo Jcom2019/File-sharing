@@ -9,7 +9,7 @@ body{
     background-color: white;
 }
 .navbar{
-    background-color: blue;
+    background-color:#87CEFA;
 }
 
 a{
@@ -37,7 +37,7 @@ a:hover{
 
 .btn{
 
-    background-color:blue;
+    background-color:#87CEFA;
     color: white;
     padding:2% 5%
 }
@@ -54,36 +54,36 @@ li{
 
 input{
 
-    border:solid 2px blue;
+    border:solid 2px #87CEFA ;
 }
 #email,#password,#password-confirm,#name{
-    border:solid 2px blue;
+    border:solid 2px #87CEFA;
 }
 footer{
-    background-color: blue;
+    background-color:#87CEFA;
     padding: 1%;
     text-align: center;
     color: white;
 }
 #received-files-header{
 
-    border:solid 1px black;
+    border:solid 1px #87CEFA;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     padding: 2%;
-    background-color: blue;
+    background-color: #87CEFA;
     color: white;
     text-align: center;
     font-weight: bold;
 }
 #received-files-body{
-    border:solid 1px black;
+    border:solid 1px #87CEFA;
     padding: 2%;
 }
 #received-files{
 
     padding: 2%;
-    background-color: blue;
+    background-color: #87CEFA;
     color: white;
     border-radius: 5px;
     margin-left: 2%;
