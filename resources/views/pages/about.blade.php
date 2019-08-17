@@ -2,7 +2,7 @@
 @section('contents')
     <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="about">
             <h2><b>About online file sharing</b></h2>
             <hr>
             <p>This web application is intended to help users of computers to easily

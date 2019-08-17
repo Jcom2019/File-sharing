@@ -31,16 +31,11 @@
                     {{-- <span class="navbar-toggler-icon"></span> --}}
                 {{-- </button> --}}
 
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <!--  center Of Navbar -->
-                    <div style="color:cornsilk">
-                    <ul class="navbar-nav mr-auto">
-                        <li><div id="home-btn"><a href="/">Home</a></div></li>
-                        <li><div id="about-btn"><a href="about">About</a></div></li>
-                        <li><div id="service-btn"><a href="Service" >Service</a></div></li>
-                    </ul>
-                    </div>
-                </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><div id="home-btn"><a class="nav-link" href="/">Home</a></div></li>
+                        <li class="nav-item"><div id="about-btn"><a class="nav-link" href="about">About</a></div></li>
                 {{-- right side of the navbar --}}
 
                 {{-- <div class="col-md-4"> --}}
@@ -49,9 +44,8 @@
                         {{-- <li><a href="{{ route('register')}}" style="padding:10px; color:cornsilk">Register</a></li> --}}
                     {{-- </ul> --}}
                 {{-- </div> --}}
-                <div class="col-md-4">
                     {{-- <!-- Right Side Of Navbar --> --}}
-                    <ul class="navbar-nav ml-auto">
+
                         {{-- <!-- Authentication Links --> --}}
                         @guest
                             <li class="nav-item">

@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('contents')
     <div class="row">
-        <div class="col-4"><img src="/storage/png/zip_files.png" width="300px" height="300px"></div>
-        <div class="col-4" id="welcome-note">
+        <div class="col-md-4" id="welcome-note">
             <h3 class="text-center"><b>Welcome to Online File Sharing</b></h3>
             <hr>
             <p >This is a web application that allows users to share files online.
@@ -12,6 +11,6 @@
                 with online file sharing you can share any type of file with your registered friends.
             </p>
         </div>
-        <div class="col-4"><img src="/storage/png/zip_files.png" width="300px" height="300px"></div>
+        <div class="col-md-8"><img src="/storage/png/zip_files.png" width="500px" height="400px" id="image"></div>
     </div>
 @endsection

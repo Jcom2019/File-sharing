@@ -50,6 +50,7 @@ a:active{
 
 li{
     margin: 0 5%;
+    display: inline;
 }
 
 input{
@@ -66,7 +67,6 @@ footer{
     color: white;
 }
 #received-files-header{
-
     border:solid 1px #87CEFA;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -81,7 +81,6 @@ footer{
     padding: 2%;
 }
 #received-files{
-
     padding: 2%;
     background-color: #87CEFA;
     color: white;
@@ -89,7 +88,19 @@ footer{
     margin-left: 2%;
     margin-right: 2%;
 }
-#welcome-note{
+#image{
+    position: relative;
+    animation-name: image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes image{
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+#welcome-note,#about{
 
-    margin:0 10% 0 10%;
+    color: #87CEFA;
 }
