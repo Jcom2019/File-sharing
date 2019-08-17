@@ -23,21 +23,15 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-inverse">
-            <div class="container">
-                <div class="navbar-brand">
+            <div class="container row">
+                    {{-- Left Side Of Navbar --}}
+                <div class="navbar-brand col-md-4">
                     {{ _('File Sharing') }}
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent row">
-                    <div class="col-4" id="nav"></div>
-                    <!-- Left Side Of Navbar -->
-                    <div class="col-4" style="color:cornsilk">
-                    </div>
+                <div class="col-md-6"></div>
 
                     <!-- Right Side Of Navbar -->
+                <div class="col-md-2">
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
