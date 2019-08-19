@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Auth;
 
 class PagesController extends Controller
 {
@@ -18,7 +19,8 @@ class PagesController extends Controller
         return view('pages.Service');
     }
     public function Upload(){
-        $note="";
+        // $user=Auth::user()->name;
+        $note = "";
         return view('Users.Upload')->with('note',$note);
     }
 }

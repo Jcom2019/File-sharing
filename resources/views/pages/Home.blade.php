@@ -11,6 +11,6 @@
                 with online file sharing you can share any type of file with your registered friends.
             </p>
         </div>
-        <div class="col-md-8"><img src="/storage/png/zip_files.png" width="500px" height="400px" id="image"></div>
+        <div class="col-md-8"><img src="/storage/png/file transfer.jpg" width="700px" height="400px" id="image"></div>
     </div>
 @endsection

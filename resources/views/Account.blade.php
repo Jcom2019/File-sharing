@@ -19,9 +19,7 @@
                     <form action = "{!!action('UsersController@viewReceivedFiles')!!}" method="POST">
                             @csrf
                             <br><button class="btn btn-primary" style="width:70%">VIEW RECEIVED FILES</button>
-                    </form>
-                    <form>
-                        <input type="hidden" name="_method" value="PUT">
+                            <input type="hidden" name="_method" value="GET">
                     </form>
                 </div>
             </div>

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Files;
 use Illuminate\Support\Facades\Redirect;
-use App\Http\Controllers\Auth;
+use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
@@ -46,6 +46,7 @@ class UsersController extends Controller
                 $file->User = $request->input('user');
                 $file->file_name = $filetosave;
                 $file->path= $path;
+                $file->from =Auth::user()->name;
                 $file->save();
                 return redirect('Account');
                 }
@@ -56,16 +57,22 @@ class UsersController extends Controller
     }
 
     public function viewReceivedFiles(){
-            $file = files::all();
-            return view('Users.files',compact('downloads'))->with('file',$file);
+            $file = files::where('User',Auth::user()->name)->get();
+            return view('Users.files')->with('file',$file);
     }
 
-    public function Download($filename){
-            $file =files::find($filename);
+    public function remove($filename){
+            $newfile = files::where('file_name',$filename)->first();
+            if($newfile != null){
+                $newfile->delete();
+                $file = files::where('User',Auth::user()->name)->get();
+                return redirect('files')->with('file',$file);
 
-            $downpath ="/storage/files/$file->file_name";
+            }else{
+                $file = files::where('User',Auth::user()->name)->get();
+                return redirect('files')->with('file',$file);
 
-            return Storage::download($downpath, $file->file_name);
+            }
 
     }
 }
