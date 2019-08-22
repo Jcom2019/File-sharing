@@ -11,50 +11,37 @@ body{
 .navbar{
     background-color:#87CEFA;
 }
-
 a{
     color: white;
     font-weight: bold;
     text-decoration:none;
 }
-
 #navbarDropdown{
 
     font-weight: normal;
 }
 a:hover{
-
     color: darkblue;
     text-decoration: none;
-
 }
-
 .navbar-brand{
-
     color:white;
     color:light
 }
-
 .btn{
-
     background-color:#87CEFA;
     color: white;
     padding:2% 5%
 }
-
 a:active{
-
     color: greenyellow;
     text-decoration: none;
 }
-
 li{
     margin: 0 5%;
     display: inline;
 }
-
 input{
-
     border:solid 2px #87CEFA ;
 }
 #email,#password,#password-confirm,#name{
@@ -97,10 +84,19 @@ footer{
     animation-delay: 1s;
 }
 @keyframes image{
-    0%{opacity: 0;}
+    0%{opacity:0;}
     100%{opacity:1;}
 }
 #welcome-note,#about{
-
     color: #87CEFA;
+}
+#dashboard{
+    border:solid 1px #87CEFA;
+}
+#dashboard-header{
+    background-color: #87CEFA;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }

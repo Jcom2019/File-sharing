@@ -3,6 +3,9 @@
     <div>
         <div class="row justify-content-left">
             <div class="col-md-4">
+                @include("inc.user-dashboard")
+            </div>
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">Dashboard</div>
 
@@ -30,14 +33,14 @@
                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            {{-- <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">Welcome to Online File Sharing</div>
                     <div class="card-body">
                         <p>This is a web application that allows users to share files online</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 @endsection

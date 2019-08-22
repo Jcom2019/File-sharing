@@ -7,18 +7,13 @@
                 <div class="card-header"><b>User Dashboard</b></div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
                     <form action = "{!!action('PagesController@Upload')!!}" method="POST">
                         @csrf
-                        <button class="btn btn-primary" style="width:70%">SEND FILES</button>
+                        <button class="btn btn-primary">SEND FILES</button>
                     </form>
                     <form action = "{!!action('UsersController@viewReceivedFiles')!!}" method="POST">
                             @csrf
-                            <br><button class="btn btn-primary" style="width:70%">VIEW RECEIVED FILES</button>
+                    <br><button class="btn btn-primary">VIEW RECEIVED FILES</button>
                             <input type="hidden" name="_method" value="GET">
                     </form>
                 </div>

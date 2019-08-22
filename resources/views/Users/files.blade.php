@@ -1,8 +1,10 @@
 @extends('layouts.login_nav')
-
 @section('contents')
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
+        @include("inc.user-dashboard")
+    </div>
+    <div class="col-md-8">
         <div id="received-files-header"><b>RECEIVED  FILES<b></div>
         <div id="received-files-body">
                 @if(count($file)>0)
@@ -21,9 +23,7 @@
                             </div>
                             <hr>
                     @endforeach
-
                 @endif
-
                 @if(count($file) == 0)
                     <div class="row">
                         <div class="col-md-12">
